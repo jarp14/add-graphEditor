@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/org.chico.uclm.add/src" modelPluginID="org.chico.uclm.add"
+    modelName="Add" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>add.emf</foreignModel>
+  <genPackages prefix="Add" disposableProviderFactory="true" ecorePackage="add.ecore#/">
+    <genClasses ecoreClass="add.ecore#//ADDDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//ADDDiagram/senses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//ADDDiagram/elements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//ADDDiagram/others"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//ADDDiagram/links"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Area">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Area/text"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Dimension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Dimension/text"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Element/text"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Interaction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Interaction/text"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Time">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Time/text"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Event/text"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Operation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Operation/text"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Datax">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Datax/text"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="add.ecore#//Node"/>
+    <genClasses ecoreClass="add.ecore#//Input">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Input/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//Input/interaction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//Input/temporality"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//Input/event"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Output">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Output/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//Output/temporality"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//Output/operation"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Data">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Data/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//Data/data"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Awareness">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Awareness/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//Awareness/area"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//Awareness/dimension"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference add.ecore#//Awareness/element"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Widget">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Widget/name"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Device">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Device/name"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Controller">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Controller/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="add.ecore#//Sense">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//Sense/name"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Sight"/>
+    <genClasses ecoreClass="add.ecore#//Touch"/>
+    <genClasses ecoreClass="add.ecore#//Taste"/>
+    <genClasses ecoreClass="add.ecore#//Hear"/>
+    <genClasses ecoreClass="add.ecore#//Smell"/>
+    <genClasses ecoreClass="add.ecore#//Environment"/>
+    <genClasses image="false" ecoreClass="add.ecore#//NoteNode">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute add.ecore#//NoteNode/name"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//Share"/>
+    <genClasses ecoreClass="add.ecore#//Flow"/>
+    <genClasses image="false" ecoreClass="add.ecore#//Link"/>
+    <genClasses ecoreClass="add.ecore#//NormalLink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference add.ecore#//NormalLink/origin"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference add.ecore#//NormalLink/target"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//SolidLink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference add.ecore#//SolidLink/origin"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference add.ecore#//SolidLink/target"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//SolidGreyLink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference add.ecore#//SolidGreyLink/origin"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference add.ecore#//SolidGreyLink/target"/>
+    </genClasses>
+    <genClasses ecoreClass="add.ecore#//DashLink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference add.ecore#//DashLink/origin"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference add.ecore#//DashLink/target"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

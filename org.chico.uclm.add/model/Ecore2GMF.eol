@@ -1,0 +1,74 @@
+configureListFigures('InteractionFigure');
+configureListFigures('TimeFigure');
+configureListFigures('EventFigure');
+configureListFigures('OperationFigure');
+configureListFigures('DataxFigure');
+configureListFigures('AreaFigure');
+configureListFigures('DimensionFigure');
+configureListFigures('ElementFigure');
+
+var palette = GmfTool!Palette.all.first();
+var currentTools = palette.tools;
+
+var toolGroupNodes = new GmfTool!ToolGroup;
+toolGroupNodes.title = "Nodes";
+toolGroupNodes.collapsible = true;
+var toolGroupParameters = new GmfTool!ToolGroup;
+toolGroupParameters.title = "Parameters";
+toolGroupParameters.collapsible = true;
+var toolGroupSenses = new GmfTool!ToolGroup;
+toolGroupSenses.title = "Senses and more";
+toolGroupSenses.collapsible = true;
+var toolGroupLinks = new GmfTool!ToolGroup;
+toolGroupLinks.title = "Links";
+toolGroupLinks.collapsible = true;
+palette.tools.add(toolGroupNodes);
+palette.tools.add(toolGroupParameters);
+palette.tools.add(toolGroupSenses);
+palette.tools.add(toolGroupLinks);
+
+var toolGroupObjects = GmfTool!ToolGroup.all.selectOne(r|r.title = 'Objects');
+var toolGroupConnections = GmfTool!ToolGroup.all.selectOne(r|r.title = 'Connections');
+
+var Nodes : Sequence = Sequence{"Awareness","Input","Output","Data","Widget","Controller","Device"};
+var Parameters : Sequence = Sequence{"Awareness area","Awareness dimension","Information element",
+		"Interaction","Operation","Temporality","Event","Data parameter"};
+var Senses : Sequence = Sequence {"Hear","Sight","Smell","Taste","Touch","Environment","Share","Flow"};
+var Links : Sequence = Sequence {"Dash","Link","Solid black","Solid grey"};
+
+objectsConnectionsToPalette(Nodes, toolGroupNodes, true);
+objectsConnectionsToPalette(Parameters, toolGroupParameters, true);
+objectsConnectionsToPalette(Senses, toolGroupSenses, true);
+objectsConnectionsToPalette(Links, toolGroupLinks, false);
+
+delete toolGroupObjects;
+delete toolGroupConnections;
+
+operation objectsConnectionsToPalette(myseq: Sequence, mytg: GmfTool!ToolGroup, isObject: Boolean) {
+	var toolEntry;
+	for (o in myseq) {
+		if (o.matches('Sep')) {
+			mytg.tools.add(new GmfTool!PaletteSeparator);
+		} else {
+			if (isObject) {
+				toolEntry = toolGroupObjects.tools.selectOne(r|r.title = o);
+			} else {
+				toolEntry = toolGroupConnections.tools.selectOne(r|r.title = o);
+			}
+			mytg.tools.add(toolEntry);
+		}
+	}
+}
+
+operation configureListFigures(nodeFigure: String) {
+	var objectFigure = GmfGraph!RoundedRectangle.all.selectOne(r|r.name = nodeFigure);
+    
+    delete objectFigure.border;
+	objectFigure.outline = false;
+	
+	var size = new GmfGraph!Dimension;
+	size.dx = 200;
+	size.dy = 16;
+
+	objectFigure.preferredSize = size;
+}

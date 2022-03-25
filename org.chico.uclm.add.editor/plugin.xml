@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated add -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="add.presentation.AddModelWizardID"
+            name="%_UI_AddModelWizard_label"
+            class="add.presentation.AddModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AddModelFile.gif">
+         <description>%_UI_AddModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated add -->
+      <editor
+            id="add.presentation.AddEditorID"
+            name="%_UI_AddEditor_label"
+            icon="icons/full/obj16/AddModelFile.gif"
+            extensions="add"
+            class="add.presentation.AddEditor"
+            contributorClass="add.presentation.AddActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

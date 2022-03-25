@@ -1,0 +1,7 @@
+# Tracing options for the org.chico.uclm.add.diagram plug-in
+
+# Common issues
+org.chico.uclm.add.diagram/debug=false
+
+# Visual IDs
+org.chico.uclm.add.diagram/debug/visualID=false

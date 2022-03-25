@@ -1,0 +1,223 @@
+@gmf
+@namespace(uri="add", prefix="add")
+package add;
+
+//#################################
+// Diagrama raiz de la notacion ADD
+//#################################
+@gmf.diagram()
+class ADDDiagram {
+	val Sense[*] senses;
+	val Node[*] elements;
+	val NoteNode[*] others;
+	val Link[*] links;
+}
+
+//###########################################
+// Nodos estilo lista para los compartimentos
+//###########################################
+@gmf.node(label="text", tool.name="Awareness area",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/003-menu-1.png")
+class Area {
+	attr String text = "<Awareness area>";
+}
+
+@gmf.node(label="text", tool.name="Awareness dimension",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/001-menu.png")
+class Dimension {
+	attr String text = "<Awareness dimension>";
+}
+
+@gmf.node(label="text", tool.name="Information element",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/002-button.png")
+class Element {
+	attr String text = "<Information element>";
+}
+
+@gmf.node(label="text", tool.name="Interaction",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/011-mouse.png")
+class Interaction {
+	attr String text = "<Explicit | Implicit> interaction";
+}
+
+@gmf.node(label="text", tool.name="Temporality",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/010-alarm.png")
+class Time {
+	attr String text = "<Event temporality>";
+}
+
+@gmf.node(label="text", tool.name="Event",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/016-drag.png")
+class Event {
+	attr String text = "<Event and parameters>";
+}
+
+@gmf.node(label="text", tool.name="Operation",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/006-sports-and-competition.png")
+class Operation {
+	attr String text = "<Operations and parameters>";
+}
+
+@gmf.node(label="text", tool.name="Data parameter",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/024-bit.png")
+class Datax {
+	attr String text = "<description>";
+}
+
+//#########################################################
+// Nodos con diferente número de compartimentos + enlazables
+//#########################################################
+abstract class Node {}
+
+@gmf.node(label="name",  figure="rectangle", border.color="0,0,0",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/005-upload.png")
+class Input extends Node {
+	attr String name = "Input";
+	@gmf.compartment(layout="list", collapsible="false")
+	val Interaction[1] interaction;
+	@gmf.compartment(layout="list", collapsible="false")
+	val Time[1] temporality;
+	@gmf.compartment(layout="list", collapsible="false")
+	val Event[1] event;
+}
+
+@gmf.node(label="name",  figure="rectangle", border.color="0,0,0",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/004-download.png")
+class Output extends Node {
+	attr String name = "Output";
+	@gmf.compartment(layout="list", collapsible="false")
+	val Time[1] temporality;
+	@gmf.compartment(layout="list", collapsible="false")
+	val Operation[1] operation;
+}
+
+
+@gmf.node(label="name",  figure="rectangle", border.color="0,0,0",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/023-data.png")
+class Data extends Node {
+	attr String name = "Data [Optional]";
+	@gmf.compartment(layout="list", collapsible="false")
+	val Datax[*] data;
+}
+
+@gmf.node(label="name",  figure="rectangle", border.color="0,0,0",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/009-cardiogram.png")
+class Awareness extends Node {
+	attr String name = "Awareness specification";
+	@gmf.compartment(layout="list", collapsible="false")
+	val Area[1] area;
+	@gmf.compartment(layout="list", collapsible="false")
+	val Dimension[1] dimension;
+	@gmf.compartment(layout="list", collapsible="false")
+	val Element[1] element;
+}
+
+@gmf.node(label="name", border.color="0,0,128",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/015-radar.png")
+class Widget extends Node {
+	attr String name = "<x: WidgetX>";
+}
+
+@gmf.node(label="name",  figure="rectangle", border.color="0,0,128",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/014-game-controller.png")
+class Device extends Node {
+	attr String name = "<x: DeviceX>";
+}
+
+@gmf.node(label="name", border.color="0,0,128",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/013-cogwheel.png")
+class Controller extends Node {
+	attr String name = "<x: ControllerX>";
+}
+
+//##############################################################
+// Nodos correspondientes a los sentidos + solo imagen/no enlace
+//##############################################################
+abstract class Sense {
+	readonly attr String name = " ";
+}
+
+@gmf.node(figure="VistaFigura", tool.name="Sight",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/008-eye.png",
+			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
+class Sight extends Sense {}
+
+@gmf.node(figure="TactoFigura", tool.name="Touch",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/017-hold.png",
+			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
+class Touch extends Sense {}
+
+@gmf.node(figure="GustoFigura", tool.name="Taste",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/018-tongue.png",
+			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
+class Taste extends Sense {}
+
+@gmf.node(figure="OidoFigura", tool.name="Hear",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/019-ear.png",
+			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
+class Hear extends Sense {}
+
+@gmf.node(figure="NarizFigura", tool.name="Smell",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/020-nose.png",
+			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
+class Smell extends Sense {}
+
+@gmf.node(figure="EntornoFigura", tool.name="Environment",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/022-sensor.png",
+			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
+class Environment extends Sense {}
+
+//#####################################
+// Resto de nodos solo imagen/no enlace
+//#####################################
+abstract class NoteNode {
+	readonly attr String name = " ";
+}
+
+@gmf.node(figure="CompartirFigura", tool.name="Share",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/021-share.png",
+			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
+class Share extends NoteNode {}
+
+@gmf.node(figure="FlujoFigura", tool.name="Flow",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/007-flow.png",
+			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
+class Flow extends NoteNode {}
+
+//########
+// Enlaces
+//########
+abstract class Link{}
+
+@gmf.link(source="origin", target="target", tool.name="Link", style="solid", width="1", color="0,0,0",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/027-link.png",
+			source.constraint="self <> oppositeEnd",target.constraint="self <> oppositeEnd")
+class NormalLink extends Link {
+	ref Node[1] origin;
+	ref Node[1] target;
+}
+
+
+@gmf.link(source="origin", target="target", tool.name="Solid black", style="solid", width="2", color="0,0,0",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/025-solid-link.png",
+			target.decoration="arrow", source.constraint="self <> oppositeEnd",target.constraint="self <> oppositeEnd")
+class SolidLink extends Link {
+	ref Node[1] origin;
+	ref Node[1] target;
+}
+
+@gmf.link(source="origin", target="target", tool.name="Solid grey", style="solid", width="2", color="128,128,128",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/026-solid-link-grey.png",
+			target.decoration="arrow", source.constraint="self <> oppositeEnd",target.constraint="self <> oppositeEnd")
+class SolidGreyLink extends Link {
+	ref Node[1] origin;
+	ref Node[1] target;
+}
+
+@gmf.link(source="origin", target="target", tool.name="Dash", style="dash", width="2", color="0,0,0",
+			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/028-dash-link.gif",
+			target.decoration="arrow", source.constraint="self <> oppositeEnd",target.constraint="self <> oppositeEnd")
+class DashLink extends Link {
+	ref Node[1] origin;
+	ref Node[1] target;
+}

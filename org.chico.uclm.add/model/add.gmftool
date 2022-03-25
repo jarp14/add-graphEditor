@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="addPalette">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Nodes"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Awareness"
+          description="Create new Awareness">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/009-cardiogram.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Input"
+          description="Create new Input">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/005-upload.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Output"
+          description="Create new Output">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/004-download.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Data"
+          description="Create new Data">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/023-data.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Widget"
+          description="Create new Widget">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/015-radar.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Controller"
+          description="Create new Controller">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/013-cogwheel.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Device"
+          description="Create new Device">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/014-game-controller.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Parameters"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Awareness area"
+          description="Create new Awareness area">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/003-menu-1.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Awareness dimension"
+          description="Create new Awareness dimension">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/001-menu.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Information element"
+          description="Create new Information element">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/002-button.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Interaction"
+          description="Create new Interaction">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/011-mouse.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Operation"
+          description="Create new Operation">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/006-sports-and-competition.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Temporality"
+          description="Create new Temporality">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/010-alarm.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Event"
+          description="Create new Event">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/016-drag.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Data parameter"
+          description="Create new Data parameter">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/024-bit.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Senses and more"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Hear"
+          description="Create new Hear">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/019-ear.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Sight"
+          description="Create new Sight">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/008-eye.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Smell"
+          description="Create new Smell">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/020-nose.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Taste"
+          description="Create new Taste">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/018-tongue.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Touch"
+          description="Create new Touch">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/017-hold.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Environment"
+          description="Create new Environment">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/022-sensor.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Share"
+          description="Create new Share">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/021-share.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Flow"
+          description="Create new Flow">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/007-flow.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Links"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Dash"
+          description="Create new Dash">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/028-dash-link.gif"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Link"
+          description="Create new Link">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/027-link.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Solid black"
+          description="Create new Solid black">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/025-solid-link.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Solid grey"
+          description="Create new Solid grey">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/026-solid-link-grey.png"
+            bundle="org.chico.uclm.add.figuras"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="add">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SolidLinkFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SolidGreyLinkFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DashLinkFigureTargetDecoration"/>
+    <descriptors name="AreaFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AreaFigure" outline="false">
+        <preferredSize dx="200" dy="16"/>
+        <children xsi:type="gmfgraph:Label" name="AreaLabelFigure" text="Area"/>
+      </actualFigure>
+      <accessors accessor="getFigureAreaLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="DimensionFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="DimensionFigure" outline="false">
+        <preferredSize dx="200" dy="16"/>
+        <children xsi:type="gmfgraph:Label" name="DimensionLabelFigure" text="Dimension"/>
+      </actualFigure>
+      <accessors accessor="getFigureDimensionLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ElementFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ElementFigure" outline="false">
+        <preferredSize dx="200" dy="16"/>
+        <children xsi:type="gmfgraph:Label" name="ElementLabelFigure" text="Element"/>
+      </actualFigure>
+      <accessors accessor="getFigureElementLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="InteractionFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="InteractionFigure" outline="false">
+        <preferredSize dx="200" dy="16"/>
+        <children xsi:type="gmfgraph:Label" name="InteractionLabelFigure" text="Interaction"/>
+      </actualFigure>
+      <accessors accessor="getFigureInteractionLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="TimeFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="TimeFigure" outline="false">
+        <preferredSize dx="200" dy="16"/>
+        <children xsi:type="gmfgraph:Label" name="TimeLabelFigure" text="Time"/>
+      </actualFigure>
+      <accessors accessor="getFigureTimeLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="EventFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="EventFigure" outline="false">
+        <preferredSize dx="200" dy="16"/>
+        <children xsi:type="gmfgraph:Label" name="EventLabelFigure" text="Event"/>
+      </actualFigure>
+      <accessors accessor="getFigureEventLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="OperationFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="OperationFigure" outline="false">
+        <preferredSize dx="200" dy="16"/>
+        <children xsi:type="gmfgraph:Label" name="OperationLabelFigure" text="Operation"/>
+      </actualFigure>
+      <accessors accessor="getFigureOperationLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="DataxFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="DataxFigure" outline="false">
+        <preferredSize dx="200" dy="16"/>
+        <children xsi:type="gmfgraph:Label" name="DataxLabelFigure" text="Datax"/>
+      </actualFigure>
+      <accessors accessor="getFigureDataxLabelFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="InputFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="InputFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="InputLabelFigure" text="Input">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="InputInteractionCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="InputTemporalityCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="InputEventCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureInputLabelFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+      <accessors accessor="getInputInteractionCompartmentFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.1"/>
+      <accessors accessor="getInputTemporalityCompartmentFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.2"/>
+      <accessors accessor="getInputEventCompartmentFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors name="OutputFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="OutputFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="OutputLabelFigure" text="Output">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="OutputTemporalityCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="OutputOperationCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureOutputLabelFigure" figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
+      <accessors accessor="getOutputTemporalityCompartmentFigure" figure="//@figures.0/@descriptors.9/@actualFigure/@children.1"/>
+      <accessors accessor="getOutputOperationCompartmentFigure" figure="//@figures.0/@descriptors.9/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="DataFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="DataFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="DataLabelFigure" text="Data">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="DataDataCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureDataLabelFigure" figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
+      <accessors accessor="getDataDataCompartmentFigure" figure="//@figures.0/@descriptors.10/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="AwarenessFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="AwarenessFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="AwarenessLabelFigure" text="Awareness">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="AwarenessAreaCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="AwarenessDimensionCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="AwarenessElementCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureAwarenessLabelFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
+      <accessors accessor="getAwarenessAreaCompartmentFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.1"/>
+      <accessors accessor="getAwarenessDimensionCompartmentFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.2"/>
+      <accessors accessor="getAwarenessElementCompartmentFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.3"/>
+    </descriptors>
+    <descriptors name="WidgetFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="WidgetFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" blue="128"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="WidgetLabelFigure" text="Widget"/>
+      </actualFigure>
+      <accessors accessor="getFigureWidgetLabelFigure" figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="DeviceFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="DeviceFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" blue="128"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="DeviceLabelFigure" text="Device"/>
+      </actualFigure>
+      <accessors accessor="getFigureDeviceLabelFigure" figure="//@figures.0/@descriptors.13/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ControllerFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ControllerFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" blue="128"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ControllerLabelFigure" text="Controller"/>
+      </actualFigure>
+      <accessors accessor="getFigureControllerLabelFigure" figure="//@figures.0/@descriptors.14/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="SightFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="SightFigure" qualifiedClassName="VistaFigura">
+        <preferredSize dx="16" dy="16"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="SightLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="SightLabelFigure" text="Sight"/>
+    </descriptors>
+    <descriptors name="TouchFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="TouchFigure" qualifiedClassName="TactoFigura">
+        <preferredSize dx="16" dy="16"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TouchLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TouchLabelFigure" text="Touch"/>
+    </descriptors>
+    <descriptors name="TasteFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="TasteFigure" qualifiedClassName="GustoFigura">
+        <preferredSize dx="16" dy="16"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TasteLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TasteLabelFigure" text="Taste"/>
+    </descriptors>
+    <descriptors name="HearFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="HearFigure" qualifiedClassName="OidoFigura">
+        <preferredSize dx="16" dy="16"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="HearLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="HearLabelFigure" text="Hear"/>
+    </descriptors>
+    <descriptors name="SmellFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="SmellFigure" qualifiedClassName="NarizFigura">
+        <preferredSize dx="16" dy="16"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="SmellLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="SmellLabelFigure" text="Smell"/>
+    </descriptors>
+    <descriptors name="EnvironmentFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="EnvironmentFigure" qualifiedClassName="EntornoFigura">
+        <preferredSize dx="16" dy="16"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="EnvironmentLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="EnvironmentLabelFigure" text="Environment"/>
+    </descriptors>
+    <descriptors name="ShareFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="ShareFigure" qualifiedClassName="CompartirFigura">
+        <preferredSize dx="16" dy="16"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ShareLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ShareLabelFigure" text="Share"/>
+    </descriptors>
+    <descriptors name="FlowFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="FlowFigure" qualifiedClassName="FlujoFigura">
+        <preferredSize dx="16" dy="16"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="FlowLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="FlowLabelFigure" text="Flow"/>
+    </descriptors>
+    <descriptors name="NormalLinkFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NormalLinkFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="SolidLinkFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SolidLinkFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.0">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="SolidGreyLinkFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SolidGreyLinkFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.1">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="128" green="128" blue="128"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="DashLinkFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="DashLinkFigure" lineWidth="2" lineKind="LINE_DASH" targetDecoration="//@figures.0/@figures.2">
+        <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+      </actualFigure>
+    </descriptors>
+  </figures>
+  <nodes name="Area" figure="AreaFigure"/>
+  <nodes name="Dimension" figure="DimensionFigure"/>
+  <nodes name="Element" figure="ElementFigure"/>
+  <nodes name="Interaction" figure="InteractionFigure"/>
+  <nodes name="Time" figure="TimeFigure"/>
+  <nodes name="Event" figure="EventFigure"/>
+  <nodes name="Operation" figure="OperationFigure"/>
+  <nodes name="Datax" figure="DataxFigure"/>
+  <nodes name="Input" figure="InputFigure"/>
+  <nodes name="Output" figure="OutputFigure"/>
+  <nodes name="Data" figure="DataFigure"/>
+  <nodes name="Awareness" figure="AwarenessFigure"/>
+  <nodes name="Widget" figure="WidgetFigure"/>
+  <nodes name="Device" figure="DeviceFigure"/>
+  <nodes name="Controller" figure="ControllerFigure"/>
+  <nodes name="Sight" figure="SightFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="16" dy="16"/>
+    </facets>
+  </nodes>
+  <nodes name="Touch" figure="TouchFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="16" dy="16"/>
+    </facets>
+  </nodes>
+  <nodes name="Taste" figure="TasteFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="16" dy="16"/>
+    </facets>
+  </nodes>
+  <nodes name="Hear" figure="HearFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="16" dy="16"/>
+    </facets>
+  </nodes>
+  <nodes name="Smell" figure="SmellFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="16" dy="16"/>
+    </facets>
+  </nodes>
+  <nodes name="Environment" figure="EnvironmentFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="16" dy="16"/>
+    </facets>
+  </nodes>
+  <nodes name="Share" figure="ShareFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="16" dy="16"/>
+    </facets>
+  </nodes>
+  <nodes name="Flow" figure="FlowFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="16" dy="16"/>
+    </facets>
+  </nodes>
+  <connections name="NormalLink" figure="NormalLinkFigure"/>
+  <connections name="SolidLink" figure="SolidLinkFigure"/>
+  <connections name="SolidGreyLink" figure="SolidGreyLinkFigure"/>
+  <connections name="DashLink" figure="DashLinkFigure"/>
+  <compartments name="InputInteractionCompartment" figure="InputFigure" accessor="//@figures.0/@descriptors.8/@accessors.1"/>
+  <compartments name="InputTemporalityCompartment" figure="InputFigure" accessor="//@figures.0/@descriptors.8/@accessors.2"/>
+  <compartments name="InputEventCompartment" figure="InputFigure" accessor="//@figures.0/@descriptors.8/@accessors.3"/>
+  <compartments name="OutputTemporalityCompartment" figure="OutputFigure" accessor="//@figures.0/@descriptors.9/@accessors.1"/>
+  <compartments name="OutputOperationCompartment" figure="OutputFigure" accessor="//@figures.0/@descriptors.9/@accessors.2"/>
+  <compartments name="DataDataCompartment" figure="DataFigure" accessor="//@figures.0/@descriptors.10/@accessors.1"/>
+  <compartments name="AwarenessAreaCompartment" figure="AwarenessFigure" accessor="//@figures.0/@descriptors.11/@accessors.1"/>
+  <compartments name="AwarenessDimensionCompartment" figure="AwarenessFigure" accessor="//@figures.0/@descriptors.11/@accessors.2"/>
+  <compartments name="AwarenessElementCompartment" figure="AwarenessFigure" accessor="//@figures.0/@descriptors.11/@accessors.3"/>
+  <labels name="AreaLabel" figure="AreaFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="DimensionLabel" figure="DimensionFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="ElementLabel" figure="ElementFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="InteractionLabel" figure="InteractionFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="TimeLabel" figure="TimeFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="EventLabel" figure="EventFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="OperationLabel" figure="OperationFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels name="DataxLabel" figure="DataxFigure" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
+  <labels name="InputLabel" figure="InputFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels name="OutputLabel" figure="OutputFigure" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
+  <labels name="DataLabel" figure="DataFigure" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+  <labels name="AwarenessLabel" figure="AwarenessFigure" accessor="//@figures.0/@descriptors.11/@accessors.0"/>
+  <labels name="WidgetLabel" figure="WidgetFigure" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
+  <labels name="DeviceLabel" figure="DeviceFigure" accessor="//@figures.0/@descriptors.13/@accessors.0"/>
+  <labels name="ControllerLabel" figure="ControllerFigure" accessor="//@figures.0/@descriptors.14/@accessors.0"/>
+  <labels name="SightLabel" figure="SightLabelFigure" elementIcon="false"/>
+  <labels name="TouchLabel" figure="TouchLabelFigure" elementIcon="false"/>
+  <labels name="TasteLabel" figure="TasteLabelFigure" elementIcon="false"/>
+  <labels name="HearLabel" figure="HearLabelFigure" elementIcon="false"/>
+  <labels name="SmellLabel" figure="SmellLabelFigure" elementIcon="false"/>
+  <labels name="EnvironmentLabel" figure="EnvironmentLabelFigure" elementIcon="false"/>
+  <labels name="ShareLabel" figure="ShareLabelFigure" elementIcon="false"/>
+  <labels name="FlowLabel" figure="FlowLabelFigure" elementIcon="false"/>
+</gmfgraph:Canvas>
