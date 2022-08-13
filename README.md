@@ -3,7 +3,7 @@
 To run it, make sure you have installed the next components:
 
 - Eclipse Modeling Tools:</br>
-  - https://www.eclipse.org/downloads/packages/release/2022-03/r/eclipse-modeling-tools </br>
+  - https://www.eclipse.org/downloads/packages/release/2022-06/r/eclipse-modeling-tools </br>
 
 - Epsilon 2.4.0:</br>
   - https://www.eclipse.org/epsilon/download/ </br> 
