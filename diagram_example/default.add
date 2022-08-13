@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add:ADDDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:add="add">
+  <senses xsi:type="add:Environment"/>
+  <senses xsi:type="add:Hear"/>
+  <senses xsi:type="add:Sight"/>
+  <senses xsi:type="add:Sight"/>
+  <senses xsi:type="add:Sight"/>
+  <elements xsi:type="add:Awareness">
+    <area text="Virtual and real-world spaces awareness"/>
+    <dimension text="When"/>
+    <element text="Event history"/>
+  </elements>
+  <elements xsi:type="add:Input">
+    <interaction text="Implicit interaction"/>
+    <temporality text="Real-time"/>
+    <event text="arrival_to_location(u,s)"/>
+  </elements>
+  <elements xsi:type="add:Output">
+    <temporality text="Real-time"/>
+    <operation text="update_widgets(p,g,m) &amp; play_cue(a)"/>
+  </elements>
+  <elements xsi:type="add:Data">
+    <data text="u:User"/>
+    <data text="gLoc:GeoLocation"/>
+    <data text="e:AgendaEntry"/>
+    <data text="sp:StateOfParticipant"/>
+  </elements>
+  <elements xsi:type="add:Controller" name="s:Geolocation sensor"/>
+  <elements xsi:type="add:Widget" name="a:Audio cues"/>
+  <elements xsi:type="add:Widget" name="p:List of participants"/>
+  <elements xsi:type="add:Widget" name="g:GroupState"/>
+  <elements xsi:type="add:Widget" name="m:Meeting agenda"/>
+  <elements xsi:type="add:Device" name="g:GPS"/>
+  <elements xsi:type="add:Device" name="k:Speaker"/>
+  <elements xsi:type="add:Device" name="s:Screen"/>
+  <others xsi:type="add:Flow"/>
+  <others xsi:type="add:Flow"/>
+  <others xsi:type="add:Share"/>
+  <links xsi:type="add:SolidGreyLink" origin="//@elements.1" target="//@elements.3"/>
+  <links xsi:type="add:SolidGreyLink" origin="//@elements.3" target="//@elements.2"/>
+  <links xsi:type="add:NormalLink" origin="//@elements.0" target="//@elements.1"/>
+  <links xsi:type="add:NormalLink" origin="//@elements.0" target="//@elements.2"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.4" target="//@elements.1"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.2" target="//@elements.5"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.2" target="//@elements.6"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.2" target="//@elements.7"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.2" target="//@elements.8"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.6" target="//@elements.11"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.7" target="//@elements.11"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.8" target="//@elements.11"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.5" target="//@elements.10"/>
+  <links xsi:type="add:SolidLink" origin="//@elements.9" target="//@elements.4"/>
+</add:ADDDiagram>
